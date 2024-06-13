@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qxc.springboot.mapper.TeacherMapper">
+    <resultMap id="TeacherResultMap" type="com.qxc.springboot.entity.Teacher">
+        <id property="teacherID" column="TeacherID" />
+        <result property="password" column="Password" />
+        <result property="gender" column="Gender" />
+        <result property="age" column="Age" />
+        <result property="identificationNumber" column="IdentificationNumber" />
+        <result property="name" column="Name" />
+        <result property="department" column="Department" />
+        <result property="title" column="Title" />
+        <result property="email" column="Email" />
+        <result property="phoneNumber" column="PhoneNumber" />
+    </resultMap>
+
+    <select id="getAllTeachers" resultMap="TeacherResultMap">
+        SELECT * FROM Teacher
+    </select>
+
+    <insert id="insertTeacher">
+        INSERT INTO Teacher (TeacherID, Password, Gender, Age, IdentificationNumber, Name, Department, Title, Email, PhoneNumber) VALUES (#{teacherID}, #{password}, #{gender}, #{age}, #{identificationNumber}, #{name}, #{department}, #{title}, #{email}, #{phoneNumber})
+    </insert>
+</mapper>

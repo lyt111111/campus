@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qxc.springboot.mapper.CourseSchedulingMapper">
+    <resultMap id="CourseSchedulingResultMap" type="com.qxc.springboot.entity.CourseScheduling">
+        <id property="teacherID" column="TeacherID" />
+        <id property="academicStaffID" column="AcademicStaffID" />
+        <id property="courseID" column="CourseID" />
+        <result property="classTime" column="ClassTime" />
+    </resultMap>
+
+    <select id="getAllCourseSchedulings" resultMap="CourseSchedulingResultMap">
+        SELECT * FROM CourseScheduling
+    </select>
+
+    <insert id="insertCourseScheduling">
+        INSERT INTO CourseScheduling (TeacherID, AcademicStaffID, CourseID, ClassTime) VALUES (#{teacherID}, #{academicStaffID}, #{courseID}, #{classTime})
+    </insert>
+</mapper>

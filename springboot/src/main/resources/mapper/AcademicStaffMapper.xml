@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qxc.springboot.mapper.AcademicStaffMapper">
+<!-- <resultMap> 元素定义了一个结果映射，它将SQL查询的结果映射到Java对象的属性上。id 表示主键字段，result 表示其他字段。-->
+<!-- property 属性指定了Java对象的属性名，column 属性指定了数据库表的列名。-->
+    <resultMap id="AcademicStaffResultMap" type="com.qxc.springboot.entity.AcademicStaff">
+        <id property="academicStaffID" column="AcademicStaffID" />
+        <result property="gender" column="Gender" />
+        <result property="age" column="Age" />
+        <result property="identificationNumber" column="IdentificationNumber" />
+        <result property="name" column="Name" />
+        <result property="department" column="Department" />
+        <result property="password" column="Password" />
+        <result property="email" column="Email" />
+        <result property="phoneNumber" column="PhoneNumber" />
+    </resultMap>
+
+    <select id="getAllAcademicStaff" resultMap="AcademicStaffResultMap">
+        SELECT * FROM AcademicStaff
+    </select>
+
+    <insert id="insertAcademicStaff">
+        INSERT INTO AcademicStaff (AcademicStaffID, Gender, Age, IdentificationNumber, Name, Department, Password, Email, PhoneNumber) VALUES (#{academicStaffID}, #{gender}, #{age}, #{identificationNumber}, #{name}, #{department}, #{password}, #{email}, #{phoneNumber})
+    </insert>
+</mapper>

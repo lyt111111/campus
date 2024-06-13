@@ -1,0 +1,11 @@
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\controller\AcademicStaffController.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\entity\AcademicStaff.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\entity\Course.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\entity\CourseScheduling.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\entity\Student.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\entity\StudentCourse.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\entity\Teacher.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\mapper\AcademicStaffMapper.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\service\AcademicStaffService.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\service\impl\AcademicStaffServiceImpl.java
+D:\Study\本人\大三下\软件工程课设\demo\demo2\springboot\src\main\java\com\qxc\springboot\SpringbootApplication.java
